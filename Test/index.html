@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <body>
+    <div style="height:100%; width:100%; min-height: 500px;">
+      <span id="cursor" class="ripple" style="height:20px; width:20px; position:absolute; background-color:blue; border-radius: 50%"></span>
+      <button style="outline: none; margin: 50px auto; background-color: blue; color: white" class="btn" id="testButton">Giant Button</button>
+    </div>
+    <button id="play" class="btn btn-regular u-floatLeft u-margin-r-btn">Play</button>
+    <input id="userId" class="u-floatLeft u-margin-r-btn" style="line-height: 28px" type="text" placeholder="type a user id"
+      value="">
+    <button id="fetch" class="btn btn-regular u-floatLeft u-margin-r-btn">Fetch</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+    <script src="./replay.js"></script>
+    <script src="./test.js"></script>
+  </body>
+
+</html>

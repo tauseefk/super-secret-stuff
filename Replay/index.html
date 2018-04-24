@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./ripple.css">
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <body>
+    <div style="height:500px; width:500px;">
+      <span id="cursor" class="ripple" style="height:20px; width:20px; position:absolute; background-color:blue; border-radius: 50%"></span>
+    </div>
+    <input id="record" type="button" value="Record">
+    <input id="play" type="button" value="Play">
+    <input id="userId" type="text" placeholder="type a user id" value="">
+    <input id="fetch" type="button" value="Fetch">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="./replay.js"></script>
+  </body>
+
+</html>

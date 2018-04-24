@@ -1,0 +1,42 @@
+{
+  "name": "secret-stuff",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "body-parser": "^1.17.1",
+    "chai": "^3.5.0",
+    "client-sessions": "^0.8.0",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.0",
+    "mocha": "^3.3.0",
+    "mongodb": "^2.2.26",
+    "querystring": "^0.2.0",
+    "socket.io": "^2.1.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.17.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "client": "cd client && yarn start",
+    "serve": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "postinstall": "cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "tauseefk",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

@@ -1,0 +1,11 @@
+body>ol {
+  margin-left: 5px;
+  padding-left: 5px;
+}
+body>ol>li>ol{
+  margin-left: -25px;
+}
+
+body>ol>li>ol>li>ol {
+  margin-left: -25px;
+}

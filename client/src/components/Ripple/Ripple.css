@@ -1,0 +1,20 @@
+.ripple {
+  border-radius: 50%;
+  transform: scale(0);
+  position: absolute;
+}
+
+.ripple-stay {
+  transform: scale(1);
+}
+
+.animation-ripple {
+    animation: rippleDrop .2s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

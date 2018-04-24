@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./list.css">
+</head>
+
+<body>
+  <input id="list" type="range" min="-25" max="25">
+  <label for="list" style="margin-right: 10px">5</label>
+  <input id="subList" type="range" min="-25" max="25">
+  <label for="subList" style="margin-right: 10px">-25</label>
+  <input id="subSubList" type="range" min="-25" max="25">
+  <label for="subSubList" style="margin-right: 10px">-25</label>
+  <ol>
+    <li>one</li>
+    <li>two
+      <ol>
+        <li>two.one</li>
+        <li>two.two</li>
+        <li>two.three</li>
+      </ol>
+    </li>
+    <li>three
+      <ol>
+        <li>three.one</li>
+        <li>three.two
+          <ol>
+            <li>three.two.one</li>
+            <li>three.two.two</li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li>four</li>
+  </ol>
+</body>
+<script src="./index.js"></script>
+
+</html>
