@@ -112,7 +112,7 @@ export default class Ripple extends PureComponent {
         onDrag={this.handleDrag}
         onMouseDown={this.handleMouseDown}
         onMouseUp={this.causeRipple}
-      // onMouseMove={this.handleMouseMove} // XXX: This is too frequent and results in ajax 413
+        onMouseMove={this.handleMouseMove} // XXX: This is too frequent and results in ajax 413
       >
         {this.props.children}
         <span

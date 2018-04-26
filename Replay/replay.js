@@ -90,7 +90,7 @@ var simulateEvent = (event) => {
     cursor.classList.add('animation-ripple');
     cursor.classList.remove('ripple-stay');
 
-    if (event.target !== null) { // assuming that the target has id for simplicity
+    if (event.target && event.target.id && document.querySelector(`#${event.target.id}`)) { // assuming that the target has id for simplicity
       document.querySelector(`#${event.target.id}`).click(); // XXX:TODO get id from eventTarget
     }
 
