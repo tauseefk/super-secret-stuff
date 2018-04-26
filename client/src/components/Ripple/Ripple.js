@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import './ripple.css';
+import './Ripple.css';
 
 const mouseStates = [
   "down",
